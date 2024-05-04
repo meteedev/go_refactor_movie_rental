@@ -36,3 +36,4 @@ You earned 2 frequent renter points
 4. remove "get" method get not start with get
 5. constant iota
 6. fix format statement print format
+7. extract method amountFor from  statement
