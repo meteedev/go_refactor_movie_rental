@@ -1,15 +1,18 @@
 package rental
 
-const REGULAR = 0
-const NEW_RELEASE = 1
-const CHILDRENS = 2
+const(
+	_ =iota
+	CHILDRENS
+	NEW_RELEASE
+	REGULAR
+)
 
 type Movie struct {
 	title     string
 	priceCode int
 }
 
-func NewMovie(title string, priceCode int) (rcvr Movie) {
+func NewMovie(title string, priceCode int) (m Movie) {
 	return Movie{
 		title:     title,
 		priceCode: priceCode,

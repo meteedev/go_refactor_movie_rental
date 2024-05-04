@@ -5,7 +5,7 @@ type Rental struct {
 	daysRented int
 }
 
-func NewRental(movie Movie, daysRented int) (rcvr Rental) {
+func NewRental(movie Movie, daysRented int) (r Rental) {
 	return Rental{
 		movie:      movie,
 		daysRented: daysRented,

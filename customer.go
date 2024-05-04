@@ -7,7 +7,7 @@ type Customer struct {
 	rentals []Rental
 }
 
-func NewCustomer(name string) (rcvr Customer) {
+func NewCustomer(name string) (c Customer) {
 	return Customer{
 		rentals: make([]Rental, 0),
 		name:    name,

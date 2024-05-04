@@ -33,3 +33,5 @@ You earned 2 frequent renter points
 1. rename variable 
 2. remove pointer
 3. fix New method return direct struct
+4. remove "get" method get not start with get
+5. constant iota
