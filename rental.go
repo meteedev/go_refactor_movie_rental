@@ -12,9 +12,15 @@ func NewRental(movie Movie, daysRented int) (r Rental) {
 	}
 }
 
+
+
 func (r Rental) DaysRented() int {
 	return r.daysRented
 }
 func (r Rental) Movie() Movie {
 	return r.movie
+}
+
+func (r Rental) Charge() float64 {
+	return r.movie.Charge(r.daysRented)
 }

@@ -42,3 +42,6 @@ You earned 2 frequent renter points
 10. extract method getPoints from statement
 11. split loop statment to getTotalAmount  , getTotalPoints
 12. push dependency getTotalAmount , getTotalPoints
+13. create struct Record , Charge for renderPlainText
+14. separate renderPlainText for presentation only
+15. remove switch Charge to use polymorp Charge
