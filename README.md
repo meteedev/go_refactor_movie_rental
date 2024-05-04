@@ -41,3 +41,4 @@ You earned 2 frequent renter points
 9. receiver rental with charge method
 10. extract method getPoints from statement
 11. split loop statment to getTotalAmount  , getTotalPoints
+12. push dependency getTotalAmount , getTotalPoints

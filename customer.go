@@ -47,17 +47,17 @@ func getPoints(r Rental)(points int){
 	return 1
 }
 
-func getTotalAmount(c Customer)(totalAmount float64){
+func getTotalAmount(rentals []Rental)(totalAmount float64){
 	result := 0.0
-	for _, r := range c.rentals {
+	for _, r := range rentals {
 		result += r.Charge()
 	}
 	return result
 }
 
-func getTotalPoints(c Customer)(getTotalPoints int){
+func getTotalPoints(rentals []Rental)(getTotalPoints int){
 	result := 0
-	for _, r := range c.rentals {
+	for _, r := range rentals {
 		result += getPoints(r)
 	}
 	return result
@@ -65,8 +65,8 @@ func getTotalPoints(c Customer)(getTotalPoints int){
 
 func (c Customer) Statement() string {
 	
-	totalAmount := getTotalAmount(c)
-	frequentRenterPoints := getTotalPoints(c)
+	totalAmount := getTotalAmount(c.rentals)
+	frequentRenterPoints := getTotalPoints(c.rentals)
 	
 	result := fmt.Sprintf("Rental Record for %v\n", c.Name())
 	for _, r := range c.rentals {
