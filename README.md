@@ -35,3 +35,4 @@ You earned 2 frequent renter points
 3. fix New method return direct struct
 4. remove "get" method get not start with get
 5. constant iota
+6. fix format statement print format
