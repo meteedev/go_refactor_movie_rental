@@ -14,9 +14,11 @@ func NewCustomer(name string) (c Customer) {
 	}
 }
 
-func (c Customer) AddRental(arg Rental) {
+func (c Customer) AddRental(arg Rental) Customer{
 	c.rentals = append(c.rentals, arg)
+	return c
 }
+
 func (c Customer) Name() string {
 	return c.name
 }
