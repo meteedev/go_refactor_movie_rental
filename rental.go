@@ -7,14 +7,14 @@ type Rental struct {
 
 func NewRental(movie Movie, daysRented int) (rcvr Rental) {
 	return Rental{
-		movie: movie,
+		movie:      movie,
 		daysRented: daysRented,
 	}
 }
 
-func (rcvr Rental) GetDaysRented() int {
-	return rcvr.daysRented
+func (r Rental) DaysRented() int {
+	return r.daysRented
 }
-func (rcvr Rental) GetMovie() Movie {
-	return rcvr.movie
+func (r Rental) Movie() Movie {
+	return r.movie
 }
