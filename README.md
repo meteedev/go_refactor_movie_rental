@@ -29,3 +29,7 @@ You earned 2 frequent renter points
 <p>Amount owed is <em>6.0</em></p>
 <p>You earned <em>2</em> frequent renter points</p>
 ```
+# Refactor step
+1. rename variable 
+2. remove pointer
+3. fix New method return direct struct
