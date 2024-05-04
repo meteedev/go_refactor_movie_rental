@@ -37,3 +37,5 @@ You earned 2 frequent renter points
 5. constant iota
 6. fix format statement print format
 7. extract method amountFor from  statement
+8. rename method  amountFor to charge 
+9. receiver rental with charge method
